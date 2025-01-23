@@ -1,0 +1,62 @@
+/* Tailwind Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables for light and dark modes */
+:root {
+  --background: #ffffff; /* Light mode background */
+  --foreground: #171717; /* Light mode foreground/text color */
+  --primary: #91691e; /* Primary color for accents (e.g., buttons, links) */
+  --secondary: #171717; /* Secondary color for dark elements */
+  --accent: #ededed; /* Accent color for light elements */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #ededed; /* Dark mode foreground/text color */
+    --primary: #ffd700; /* Bright gold accent for dark mode */
+    --secondary: #0a0a0a; /* Darker background for dark mode */
+    --accent: #ffffff; /* Lighter text for dark mode */
+  }
+}
+
+/* Global Body Styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode toggle */
+}
+
+/* Tailwind Customizations for Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-gray-100; /* Light text color for headers */
+}
+
+/* Utility Classes for the rest of your layout */
+a {
+  @apply text-primary; /* Primary color for links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  @apply text-accent; /* Accent color for links on hover */
+}
+
+button {
+  @apply bg-primary text-white px-4 py-2 rounded transition-all;
+}
+
+button:hover {
+  @apply bg-accent; /* Accent color for button hover */
+}
+html {
+  scroll-behavior: smooth;
+}
