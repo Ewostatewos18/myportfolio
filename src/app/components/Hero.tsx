@@ -21,10 +21,13 @@ const Hero = () => (
           View Projects
         </a>
         <a
-          href="#contact"
+          href="https://www.canva.com/design/DAGYK8cumWA/KYB9smYpZ8KxffE7Ed5r5g/edit?utm_content=DAGYK8cumWA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
           className="px-6 py-3 border border-yellow-700 text-yellow-700 font-semibold rounded-lg hover:bg-yellow-700 hover:text-black transition duration-200 ease-in-out"
-        >
-          Contact Me
+          target="_blank"
+          rel="noopener noreferrer"
+ 
+       >
+         View CV
         </a>
       </div>
     </div>
