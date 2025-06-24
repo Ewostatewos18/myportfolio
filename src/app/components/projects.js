@@ -40,6 +40,15 @@ const projects = [
     category: "Web Apps",
     techStack: ["Vue.js", "GraphQL API", "Tailwind CSS"],
   },
+  {
+    name: "Real-Time Chat App",
+    description: "A real-time one-on-one chat app built with React and Firebase Realtime Database. Includes editing, deleting, and responsive chat bubbles.",
+    link: "https://chat-app-mox7.vercel.app/",
+    imageUrl: "/chat-app.png", 
+    category: "Web Apps",
+    techStack: ["React", "Firebase", "Tailwind CSS"],
+  },
+  
 
 ];
 
